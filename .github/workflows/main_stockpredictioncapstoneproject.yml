@@ -63,4 +63,4 @@ jobs:
         with:
           app-name: 'StockPredictionCapstoneProject'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_27C2F44AB660425B840AE487E0BF2B02 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_95820CE31DED4913B77DA980AEBB5694 }}
