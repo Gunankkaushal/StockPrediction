@@ -16,6 +16,8 @@ jobs:
     defaults:
      run:
       working-directory: backend
+    env:
+      PYTHONPATH: .
     permissions:
       contents: read #This is required for actions/checkout
 
