@@ -62,10 +62,11 @@ jobs:
         with:
           name: python-app
       
-      - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
-        id: deploy-to-webapp
-        with:
-          app-name: 'StockPredictionCapstoneProject'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_95820CE31DED4913B77DA980AEBB5694 }}
+     - name: 'Deploy to Azure Web App'
+  uses: azure/webapps-deploy@v3
+  id: deploy-to-webapp
+  with:
+    app-name: 'StockPredictionCapstoneProject'
+    slot-name: 'Production'
+    publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_... }}
+    package: .
