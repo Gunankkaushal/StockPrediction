@@ -19,7 +19,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+#test
 # Initialize Services
 preprocessor = DataPreprocessor(lookback=60)
 sentiment_analyzer = StockSentimentAnalyzer()
