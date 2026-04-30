@@ -13,11 +13,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-     run:
-      working-directory: backend
-    env:
-      PYTHONPATH: .
     permissions:
       contents: read #This is required for actions/checkout
 
@@ -68,5 +63,4 @@ jobs:
         with:
           app-name: 'StockPredictionCapstoneProject'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_27C2F44AB660425B840AE487E0BF2B02 }}
-          package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_72ADC121EE5B4AD8A1D7379D542F1B4E }}
