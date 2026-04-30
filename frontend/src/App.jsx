@@ -15,7 +15,7 @@ ChartJS.register(
   ArcElement, Title, Tooltip, Legend, Filler
 );
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "const API_BASE = "https://stockpredictioncapstoneproject-ftghczhgh9f5d9a2.centralindia-01.azurewebsites.net";";
 
 function App() {
   const [ticker, setTicker] = useState("AAPL");
