@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ConfigDict
 import os
-import numpy as np
 import pandas as pd
 import random
 from fastapi.middleware.cors import CORSMiddleware
